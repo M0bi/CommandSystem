@@ -11,7 +11,7 @@ public class PlayerListener implements Listener {
 
 
 
-    /**@EventHandler
+    @EventHandler
     public void onPlayerCommand (final PlayerCommandPreprocessEvent event){
         final LocalPlayer localPlayer = LocalPlayer.get (event.getPlayer ());
         final String [] messageChunks = pEvent.getMessage ().split (" ");
@@ -21,6 +21,6 @@ public class PlayerListener implements Listener {
                 //CommandManager.getInstance ().execute (messageChunks, localPlayer)) {
             pEvent.setCancelled (true);
         }
-    }*/
+    }
 
 }
